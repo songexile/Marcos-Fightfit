@@ -1,0 +1,132 @@
+{
+  "businessName": "Fight Fit",
+  "bookingLink": "https://besthealth.io/booking?locationId=175f81d7-6506-ee11-907c-000d3ad19d16",
+  "address": "218 Parnell Road, Parnell, Auckland, 1052",
+  "credentials": "Sports Physio (NZ) Ltd established 1999.\nCompany Director and Lead Physiotherapist\nBHScPhysiotherapy (1998)\nPost Graduate Diploma Sports and Exercise Medicine (with distinction) 2012.",
+  "description1": "Tanya has over 25 years clinical experience in Private practice physiotherapy. She has a holistic approach to Physiotherapy practice, ensuring accurate diagnosis, evidence informed treatment, individualised approach and effective care for all Musculoskeletal and Sports injuries and presentations. Treatment may include hands on/ manual therapy techniques and Exercise Rehabilitation alongside Patient education in self care, injury prevention and recovery.",
+  "description2": "Tanya is focused on helping patients understand their physical injury/ challenge in a holistic way. Current medical science recognises that physical injuries and pain are influenced by multiple factors including mental health, social, lifestyle, occupation and activity specific factors and loading. Holistic Physiotherapy aims to assist you to not just recover from injury or painful conditions, but to prevent recurrence and enjoy an active lifestyle.",
+  "pages": [
+    {
+      "name": "Home",
+      "url": "#"
+    },
+    {
+      "name": "About Me",
+      "url": "#about"
+    },
+    {
+      "name": "Services",
+      "url": "#services"
+    },
+    {
+      "name": "Pricing",
+      "url": "#fees"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ],
+  "generalInfo": [
+    {
+      "name": "ACC Coverage",
+      "description": "ACC covers injuries sustained following accidental trauma or load, and Claims can be lodged at the clinic by the Physiotherapist. Apply to all services for Non-Accidental injuries, Massage, and Pilates."
+    },
+    {
+      "name": "Accelerated Care Pathways",
+      "description": "Sports Physio (NZ) Ltd is a contracted supplier under the Careway programme. Several injury types and certain conditions are able to be cared for under an Accelerated care pathway, with no ACC surcharge. ACC has identified key injuries that require an Interdisciplinary approach, with typically longer periods of care with higher frequency of Physiotherapy appointments required for full recovery. Examples include: Knee ACL injuries, some Ankle ligament injuries, certain cervical spine, lumbar spine and shoulder injuries. Please enquire if your injury might be covered under this scheme."
+    },
+    {
+      "name": "Southern Cross Easy Claim",
+      "description": "Sports Physio (NZ) Ltd is a contracted supplier under the Southern Cross Easy Claim programme. Just let your physio know if you have a Southern Cross policy covering Physiotherapy and we can invoice your insurer directly."
+    },
+    {
+      "name": "Other Insurers",
+      "description": "We supply high quality Physiotherapy services for all healthcare suppliers. Typically we supply a receipt and you lodge for reimbursement with your Insurer."
+    }
+  ],
+  "socials": [
+    {
+      "name": "email",
+      "icon": "mdi:email",
+      "url": "mailto:tanya.browne42@gmail.com"
+    },
+    {
+      "name": "phone",
+      "icon": "mdi:phone",
+      "url": "tel:+640274990539"
+    }
+  ],
+  "services": [
+    {
+      "name": "Sports Physio",
+      "description": "Providing comprehensive, effective and accurate Physiotherapy assessment and treatment for all clients regardless of age or level of sporting achievement."
+    },
+    {
+      "name": "Sports Rehabilitation",
+      "description": "Sport rehabilitation focuses on understanding, preventing and treating sports and exercise-related injuries and musculoskeletal conditions."
+    },
+    {
+      "name": "Pilates",
+      "description": "Pilates is an incredible tool for pain relief, injury prevention, rehabilitation, strengthening, flexibility, core, posture, symmetry, muscle balance and performance."
+    },
+    {
+      "name": "ACC Registered Clinic",
+      "description": "Most Sports and musculoskeletal injuries when caused accidentally are covered by ACC insurance legislation in NZ."
+    },
+    {
+      "name": "Sports Massage",
+      "description": "Regular sports massage will speed recovery, condition and prepare muscles, free up stiff joints and tight muscles, help prevent injuries and increase movement, flexibility and joint range of movement."
+    }
+  ],
+  "fees": [
+    {
+      "name": "ACC Surcharge",
+      "details": [
+        {
+          "appointmentType": "Initial Appointment",
+          "duration": "60 minutes",
+          "fullRate": "$70",
+          "discountedRate": "$45"
+        },
+        {
+          "appointmentType": "Follow up Appointment",
+          "duration": "30 minutes",
+          "fullRate": "$45",
+          "discountedRate": "$30"
+        }
+      ]
+    },
+    {
+      "name": "Private Fees",
+      "details": [
+        {
+          "appointmentType": "Initial Appointment",
+          "duration": "60 minutes",
+          "fullRate": "$125",
+          "discountedRate": "$90"
+        },
+        {
+          "appointmentType": "Follow up Appointment",
+          "duration": "30 minutes",
+          "fullRate": "$75",
+          "discountedRate": "$65"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Nui N Scott McGregor",
+      "review": "Tanya has been my physio for the last 6-7 years. She is brilliant. She not only treats my injury, but also works on my strength and flexibility to prevent further injuries. Tanya is friendly, professional and she cares about her patients. Some of my friends and colleagues now use her also, and spoke very highly of their time with her."
+    },
+    {
+      "name": "Aakash Virdi",
+      "review": "Very positive experience from first contact. Tanya was very knowledgeable and gentle. Felt like I saw improvement with my mid back pain after only one day of exercises. Such an immediate relief all because she get to the root cause and fixed it."
+    },
+    {
+      "name": "Anne Bray",
+      "review": "Tanya has been fantastic, she is personable and professional. She has used a variety of techniques to help me recover from knee surgery."
+    }
+  ]
+}
