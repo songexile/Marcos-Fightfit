@@ -9,7 +9,7 @@ export default {
       {
         cmyk: {
           ...require("daisyui/src/theming/themes")["forest"],
-          primary: "#0060AA",
+          primary: "#E31B1E",
           secondary: "#ECBD44",
         },
       },
