@@ -31,7 +31,9 @@ import config from "@data/config.json";
 ---
 
 <Layout title={config.businessName}>
+
   <section class="min-h-screen   border-gray-500 w-full relative text-white bg-black overflow-hidden z-10">
+
     <div
       class="flex flex-col items-start mb-8 justify-start w-full px-4 pt-8 sm:px-8 md:px-16 lg:px-32 relative z-30"
     >
@@ -41,9 +43,9 @@ import config from "@data/config.json";
         <h1 class="italic">FIGHT FIT</h1>
       </div>
       <div class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-8">
-        <h1 class=" ">MARTIAL ARTS,</h1>
-        <h1 class=" ">BODYBUILDING,</h1>
-        <h1 class=" text-primary font-bold">WITH LOVE</h1>
+        <h1 class="">MARTIAL ARTS,</h1>
+        <h1 class="">BODYBUILDING,</h1>
+        <h1 class="text-primary font-bold">WITH LOVE</h1>
       </div>
       <div class="relative mt-4 p-4   md:mb-16">
         <h1
@@ -51,16 +53,15 @@ import config from "@data/config.json";
         >
         My aim is to provide you with the finest blend of Muay Thai and bodybuilding techniques, ensuring you're well-equipped to compete effectively for amateur titles.
         </h1>
-        
-     
       </div>
       <div class="flex-col sm:flex-row flex gap-8">
         <a
           href={config.bookingLink}
           target="_blank"
-          class="btn bg-primary text-white px-16 font-extrabold btn-lg">Book a lesson</a
+          class="btn bg-primary text-white px-16 font-extrabold btn-lg"
+          >Book a lesson</a
         >
-        <a href="#contact" class="btn btn-secondary  font-extrabold btn-lg"
+        <a href="#contact" class="btn btn-secondary font-extrabold btn-lg"
           >Contact Now</a
         >
       </div>
@@ -71,7 +72,7 @@ import config from "@data/config.json";
         alt="hero img"
         class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-20"
       />
-    <Image
+      <Image
         src={hero2Img}
         alt="hero img"
         class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-10"
@@ -88,15 +89,25 @@ import config from "@data/config.json";
     <div class="max-w-screen-xl mx-auto flex flex-col gap-20 max-md:gap-12">
       <div class="flex items-center flex-col gap-10 text-center">
         <div class="relative">
-          <h1 class="text-white font-extrabold text-7xl md:text-8xl p-6 bg-red-600 z-50 shadow-lg transform -skew-x-6">MY CLASSES</h1>
+          <h1
+            class="text-white font-extrabold text-7xl md:text-8xl p-6 bg-red-600 z-50 shadow-lg transform -skew-x-6"
+          >
+            MY CLASSES
+          </h1>
         </div>
-        <p class="z-50 text-xl font-light text-gray-300 max-w-2xl leading-relaxed">
+        <p
+          class="z-50 text-xl font-light text-gray-300 max-w-2xl leading-relaxed"
+        >
           {config.credentials}
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center">
-        <div class="relative w-full h-96 group transform transition-transform duration-300 hover:scale-105">
-          <div class="absolute inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl">
+        <div
+          class="relative w-full h-96 group transform transition-transform duration-300"
+        >
+          <div
+            class="absolute inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl"
+          >
             <Image
               src={hero1Img}
               alt="Muay Thai Class"
@@ -104,11 +115,17 @@ import config from "@data/config.json";
             />
           </div>
           <div class="absolute inset-0 flex items-center justify-center">
-            <p class="text-white text-4xl font-bold z-10 tracking-wider">MUAY THAI</p>
+            <p class="text-white text-4xl font-bold z-10 tracking-wider">
+              MUAY THAI
+            </p>
           </div>
         </div>
-        <div class="relative w-full h-96 group transform transition-transform duration-300 hover:scale-105">
-          <div class="absolute inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl">
+        <div
+          class="relative w-full h-96 group transform transition-transform duration-300 group"
+        >
+          <div
+            class="absolute inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl"
+          >
             <Image
               src={hero2Img}
               alt="Bodybuilding Class"
@@ -116,7 +133,9 @@ import config from "@data/config.json";
             />
           </div>
           <div class="absolute inset-0 flex items-center justify-center">
-            <p class="text-white text-4xl font-bold z-10 tracking-wider">BODYBUILDING</p>
+            <p class="text-white text-4xl font-bold z-10 tracking-wider">
+              BODYBUILDING
+            </p>
           </div>
         </div>
       </div>
@@ -255,7 +274,7 @@ import config from "@data/config.json";
       }
     </div>
   </section> -->
-  <section 
+  <section
     id="contact"
     class="flex flex-col gap-16 py-16 max-w-screen-lg mx-auto px-2"
   >
@@ -380,7 +399,7 @@ import config from "@data/config.json";
           end: "top center",
           scrub: true,
         },
-      },
+      }
     )
     .fromTo(
       "#basketball",
@@ -393,7 +412,7 @@ import config from "@data/config.json";
           end: "bottom center",
           scrub: true,
         },
-      },
+      }
     )
     .fromTo(
       "#basketballPattern",
@@ -407,7 +426,7 @@ import config from "@data/config.json";
           scrub: true,
         },
       },
-      "0",
+      "0"
     );
 
   // @ts-ignore
