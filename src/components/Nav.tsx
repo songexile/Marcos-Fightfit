@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Icon } from "@iconify-icon/react";
 
-import logoImg from "@assets/images/logo.jpeg";
+import logoImg from "@assets/images/fightfitlogo.jpeg";
 
 import config from "@data/config.json";
 

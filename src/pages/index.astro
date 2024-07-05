@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import logoImg from "@assets/images/logo.jpeg";
 import hero1Img from "@assets/images/fighting.jpeg";
 import hero2Img from "@assets/images/boxing2.jpg";
+import lifting from "@assets/images/benchpress.jpg";
 import hero3Img from "@assets/images/hero3.jpeg";
 import basketballPatternImg from "@assets/images/basketballPattern.png";
 import runningManGif from "@assets/images/runningMan.gif";
@@ -31,9 +32,9 @@ import config from "@data/config.json";
 ---
 
 <Layout title={config.businessName}>
-
-  <section class="min-h-screen   border-gray-500 w-full relative text-white bg-black overflow-hidden z-10">
-
+  <section
+    class="min-h-screen border-b-4 border-gray-700 w-full relative text-white bg-black overflow-hidden z-10"
+  >
     <div
       class="flex flex-col items-start mb-8 justify-start w-full px-4 pt-8 sm:px-8 md:px-16 lg:px-32 relative z-30"
     >
@@ -47,11 +48,13 @@ import config from "@data/config.json";
         <h1 class="">BODYBUILDING,</h1>
         <h1 class="text-primary font-bold">WITH LOVE</h1>
       </div>
-      <div class="relative mt-4 p-4   md:mb-16">
+      <div class="relative mt-4 p-4 md:mb-16">
         <h1
-          class="heroText text-left max-w-md md:max-w-2xl lg:max-w-3xl text-2xl uppercase  font-bold text-white max-md:my-4"
+          class="heroText text-left max-w-md md:max-w-2xl lg:max-w-3xl text-2xl uppercase font-bold text-white max-md:my-4"
         >
-        My aim is to prepare for novice and amature career so you can get into the fight world safely without injury. I teach form and technique ensuring your well equipped.
+          My aim is to help you prepare for your novice and amature career so
+          you can get into the fight world safely without injury. I teach form
+          and technique ensuring your well equipped.
         </h1>
       </div>
       <div class="flex-col sm:flex-row flex gap-8">
@@ -61,9 +64,9 @@ import config from "@data/config.json";
           class="btn bg-primary text-white px-16 font-extrabold btn-lg"
           >Book a lesson</a
         >
-        <a href="#contact" class="btn btn-secondary font-extrabold btn-lg"
+        <!-- <a href="#contact" class="btn btn-secondary font-extrabold btn-lg"
           >Contact Now</a
-        >
+        > -->
       </div>
     </div>
     <div id="heroImgWrapper" class="absolute inset-0 opacity-0">
@@ -85,7 +88,7 @@ import config from "@data/config.json";
       /> -->
     </div>
   </section>
-  <section class="bg-black py-24 px-4" id="about">
+  <section class="bg-black py-24 px-4" id="classes">
     <div class="max-w-screen-xl mx-auto flex flex-col gap-20 max-md:gap-12">
       <div class="flex items-center flex-col gap-10 text-center">
         <div class="relative">
@@ -116,7 +119,7 @@ import config from "@data/config.json";
           </div>
           <div class="absolute inset-0 flex items-center justify-center">
             <p class="text-white text-4xl font-bold z-10 tracking-wider">
-              MUAY THAI
+              MARTIAL ARTS
             </p>
           </div>
         </div>
@@ -127,7 +130,7 @@ import config from "@data/config.json";
             class="absolute inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl"
           >
             <Image
-              src={hero2Img}
+              src={lifting}
               alt="Bodybuilding Class"
               class="object-cover w-full h-full transition-opacity opacity-30 duration-300 group-hover:opacity-70"
             />
@@ -139,30 +142,49 @@ import config from "@data/config.json";
           </div>
         </div>
       </div>
-      <div class="text-center flex items-center flex-col mx-2 sm:mx-4 md:mx-8 lg:mx-16 py-12">
+      <div
+        class="text-center flex items-center flex-col mx-2 sm:mx-4 md:mx-8 lg:mx-16 py-12"
+      >
         <h2 class="text-white text-4xl font-bold mb-6">Our Mission</h2>
-        <div class="flex flex-col text-left text-gray-300 text-xl leading-relaxed max-w-3xl mx-auto space-y-4">
-          <p class="font-semibold text-2xl text-primary">Imagine stepping into the ring, unshakeable confidence coursing through your veins.</p>
+        <div
+          class="flex flex-col text-left text-gray-300 text-xl leading-relaxed max-w-3xl mx-auto space-y-4"
+        >
+          <p class="font-semibold text-2xl text-primary">
+            Imagine being prepared for your first ring fight with all tools
+            needed? Or the body of your dreams for the date planned at the
+            beach?
+          </p>
           <p>Here's how we make it happen:</p>
           <ul class="list-none space-y-3">
             <li class="flex items-start">
               <span class="text-primary mr-2">➤</span>
-              <span><strong class="text-white">Relentless Training:</strong> We push your limits, sculpting a fighter's body and mindset.</span>
+              <span
+                ><strong class="text-white">Understanding Yourself:</strong> We develop/grow
+                your understanding of your body and educate your mind with technique
+                so you will have the muscle memory and skill to perform in any style
+                of your choosing!</span
+              >
             </li>
+
             <li class="flex items-start">
               <span class="text-primary mr-2">➤</span>
-              <span><strong class="text-white">Lethal Techniques:</strong> Master the art of Muay Thai and kickboxing, honed for amateur domination.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-primary mr-2">➤</span>
-              <span><strong class="text-white">Unbeatable Conditioning:</strong> Forge strength that lasts from the first bell to the final round.</span>
+              <span
+                ><strong class="text-white">Muscle Development:</strong> Learn how
+                to forge the body of your goals and dreams as we take you through
+                each life step required to get there.</span
+              >
             </li>
           </ul>
-          <p class="text-2xl font-bold text-primary mt-4">Your amateur title isn't a dream. It's our mission.</p>
-          <a href="#contact" class="bg-primary text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-primary-dark transition duration-300 ease-in-out mt-4 inline-block">Start Your Champion's Journey</a>
+          <p class="text-2xl font-bold text-primary mt-4">
+            Your goals aren’t impossible, so let us make reaching it easier!
+          </p>
+          <a
+            href="#contact"
+            class="bg-primary text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-primary-dark transition duration-300 ease-in-out mt-4 inline-block"
+            >Start Your Champion's Journey</a
+          >
         </div>
       </div>
-      
     </div>
   </section>
   <!-- <section
@@ -279,7 +301,7 @@ import config from "@data/config.json";
     class="flex flex-col gap-16 py-16 max-w-screen-lg mx-auto px-2"
   >
     <h1 class="text-9xl uppercase font-extrabold text-center text-white">
-      Ready to train? 
+      Ready to train?
     </h1>
     <div class="flex flex-col gap-5 items-center">
       <p class="text-center italic text-2xl">
@@ -399,7 +421,7 @@ import config from "@data/config.json";
           end: "top center",
           scrub: true,
         },
-      }
+      },
     )
     .fromTo(
       "#basketball",
@@ -412,7 +434,7 @@ import config from "@data/config.json";
           end: "bottom center",
           scrub: true,
         },
-      }
+      },
     )
     .fromTo(
       "#basketballPattern",
@@ -426,7 +448,7 @@ import config from "@data/config.json";
           scrub: true,
         },
       },
-      "0"
+      "0",
     );
 
   // @ts-ignore
