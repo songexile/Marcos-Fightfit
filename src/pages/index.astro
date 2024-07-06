@@ -36,19 +36,19 @@ import config from "@data/config.json";
     class="min-h-screen border-b-4 border-gray-700 w-full relative text-white bg-black overflow-hidden z-10"
   >
     <div
-      class="flex flex-col items-start mb-8 justify-start w-full px-4 pt-8 sm:px-8 md:px-16 lg:px-32 relative z-30"
+      class="flex flex-col items-start mb-8 justify-start w-full px-4 pt-8 sm:px-8 md:px-16 lg:px-32 relative z-30 gap-8 select-none"
     >
       <!-- <Image src={logoImg} alt="logo" class="rounded-2xl w-64 max-md:w-44" /> -->
       <div class="text-4xl sm:text-5xl md:text-6xl font-extrabold">
-        <h1 class="">MARCOS</h1>
+        <!-- <h1 class="">MARCOS</h1> -->
         <h1 class="italic">FIGHT FITT</h1>
       </div>
-      <div class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-8">
+      <div class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
         <h1 class="">MARTIAL ARTS,</h1>
         <h1 class="">BODYBUILDING,</h1>
         <h1 class="text-primary font-bold">WITH LOVE</h1>
       </div>
-      <div class="relative mt-4 p-4 md:mb-16">
+      <div class="relative mt-4 p-4">
         <h1
           class="heroText text-left max-w-md md:max-w-2xl lg:max-w-3xl text-2xl uppercase font-bold text-white max-md:my-4"
         >
@@ -69,17 +69,17 @@ import config from "@data/config.json";
         > -->
       </div>
     </div>
-    <div id="heroImgWrapper" class="absolute inset-0 opacity-0">
+    <div id="heroImgWrapper" class="absolute top-0 left-0 w-full h-full">
       <Image
         src={hero1Img}
         alt="hero img"
-        class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-20"
+        class="heroImg object-cover absolute opacity-40 grayscale-[0.5] z-20 top-0 left-0 w-full h-full"
       />
-      <Image
+      <!-- <Image
         src={hero2Img}
         alt="hero img"
         class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-10"
-      />
+      /> -->
 
       <!-- <Image
         src={hero3Img}
@@ -379,88 +379,4 @@ import config from "@data/config.json";
     stagger: 0.2,
     opacity: 0,
   });
-  // introTimeline
-  //   .from("#runningManGif", {
-  //     x: "-300%",
-  //     duration: 3,
-  //     ease: "power2.out",
-  //   })
-  //   .to("#intro", {
-  //     opacity: 0,
-  //     display: "none",
-  //   });
-
-  const heroBGTimeline = gsap.timeline();
-  heroBGTimeline
-    .to("#heroImgWrapper", {
-      opacity: 0.2,
-      duration: 1,
-    })
-    .to(".heroImg", {
-      opacity: 0,
-      duration: 2,
-      stagger: 6,
-      yoyo: true,
-      repeatDelay: 3,
-      delay: 3,
-      repeat: -1,
-    });
-
-  const basketballTimline = gsap.timeline();
-  basketballTimline
-    .fromTo(
-      "#basketball",
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: "#about",
-          start: "top center",
-          end: "top center",
-          scrub: true,
-        },
-      }
-    )
-    .fromTo(
-      "#basketball",
-      { translateY: "-150%" },
-      {
-        translateY: "150%",
-        scrollTrigger: {
-          trigger: "#about",
-          start: "top center",
-          end: "bottom center",
-          scrub: true,
-        },
-      }
-    )
-    .fromTo(
-      "#basketballPattern",
-      { translateY: "-10%" },
-      {
-        translateY: "20%",
-        scrollTrigger: {
-          trigger: "#about",
-          start: "top center",
-          end: "bottom center",
-          scrub: true,
-        },
-      },
-      "0"
-    );
-
-  // @ts-ignore
-  var map = L.map("map").setView([-36.854944535768496, 174.78057108465723], 18);
-  // @ts-ignore
-  L.marker([-36.854944535768496, 174.78057108465723]).addTo(map);
-
-  // @ts-ignore
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 18,
-    minZoom: 16,
-    attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }).addTo(map);
 </script>
