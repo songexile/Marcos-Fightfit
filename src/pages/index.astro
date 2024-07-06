@@ -33,16 +33,11 @@ import config from "@data/config.json";
 
 <Layout title={config.businessName}>
   <section
-    class="min-h-screen border-b-4 border-gray-700 w-full relative text-white bg-black overflow-hidden z-10"
+    class="min-h-screen border-b-4 border-gray-700 w-full relative text-white bg-black overflow-hidden z-10 pt-16"
   >
     <div
       class="flex flex-col items-start mb-8 justify-start w-full px-4 pt-8 sm:px-8 md:px-16 lg:px-32 relative z-30 gap-8 select-none"
     >
-      <!-- <Image src={logoImg} alt="logo" class="rounded-2xl w-64 max-md:w-44" /> -->
-      <div class="text-4xl sm:text-5xl md:text-6xl font-extrabold">
-        <!-- <h1 class="">MARCOS</h1> -->
-        <h1 class="italic">FIGHT FITT</h1>
-      </div>
       <div class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
         <h1 class="">MARTIAL ARTS,</h1>
         <h1 class="">BODYBUILDING,</h1>
@@ -64,28 +59,18 @@ import config from "@data/config.json";
           class="btn bg-primary text-white hover:bg-white hover:text-primary px-16 font-extrabold btn-lg"
           >Book a lesson</a
         >
-        <!-- <a href="#contact" class="btn btn-secondary font-extrabold btn-lg"
-          >Contact Now</a
-        > -->
       </div>
     </div>
     <div id="heroImgWrapper" class="absolute top-0 left-0 w-full h-full">
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black to-transparent z-10"
+      >
+      </div>
       <Image
         src={hero1Img}
         alt="hero img"
-        class="heroImg object-cover absolute opacity-40 grayscale-[0.5] z-20 top-0 left-0 w-full h-full"
+        class="heroImg object-cover absolute top-0 left-0 w-full h-full"
       />
-      <!-- <Image
-        src={hero2Img}
-        alt="hero img"
-        class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-10"
-      /> -->
-
-      <!-- <Image
-        src={hero3Img}
-        alt="hero img"
-        class="object-cover absolute h-full w-full grayscale-[0.5]"
-      /> -->
     </div>
   </section>
   <section class="bg-black py-24 px-4" id="classes">

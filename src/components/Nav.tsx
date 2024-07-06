@@ -10,7 +10,13 @@ const Nav = () => {
 
   return (
     <div>
-      <nav className="navbar absolute left-0 top-0 z-20 bg-base-100 bg-transparent max-md:hidden">
+      <nav className="navbar absolute left-0 right-0 top-0 z-50 mx-auto max-w-screen-xl bg-transparent max-md:hidden">
+        <a
+          href="/"
+          className="relative text-xl font-extrabold italic transition hover:text-primary"
+        >
+          FIGHT FITT
+        </a>
         <ul className="menu menu-horizontal ml-auto px-1">
           {config.pages.slice(1).map((page) => (
             <li key={page.name}>
