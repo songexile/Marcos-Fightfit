@@ -61,7 +61,7 @@ import config from "@data/config.json";
         <a
           href="#contact"
           target=""
-          class="btn bg-primary text-white px-16 font-extrabold btn-lg"
+          class="btn bg-primary text-white hover:bg-white hover:text-primary px-16 font-extrabold btn-lg"
           >Book a lesson</a
         >
         <!-- <a href="#contact" class="btn btn-secondary font-extrabold btn-lg"
@@ -109,12 +109,12 @@ import config from "@data/config.json";
           class="relative w-full h-96 group transform transition-transform duration-300"
         >
           <div
-            class="absolute inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl"
+            class="absolute group inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl"
           >
             <Image
               src={hero1Img}
               alt="Muay Thai Class"
-              class="object-cover w-full h-full transition-opacity opacity-30 duration-300 group-hover:opacity-70"
+              class="object-cover scale-110 group-hover:scale-100 transition w-full h-full opacity-30 duration-300 group-hover:opacity-70"
             />
           </div>
           <div class="absolute inset-0 flex items-center justify-center">
@@ -127,12 +127,12 @@ import config from "@data/config.json";
           class="relative w-full h-96 group transform transition-transform duration-300 group"
         >
           <div
-            class="absolute inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl"
+            class="absolute group inset-0 border-[16px] rounded-2xl border-red-700 overflow-hidden shadow-2xl"
           >
             <Image
               src={lifting}
               alt="Bodybuilding Class"
-              class="object-cover w-full h-full transition-opacity opacity-30 duration-300 group-hover:opacity-70"
+              class="object-cover w-full scale-110 group-hover:scale-100 h-full transition opacity-30 duration-300 group-hover:opacity-70"
             />
           </div>
           <div class="absolute inset-0 flex items-center justify-center">
@@ -180,7 +180,7 @@ import config from "@data/config.json";
           </p>
           <a
             href="#contact"
-            class="bg-primary text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-primary-dark transition duration-300 ease-in-out mt-4 inline-block"
+            class="bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-primary-dark transition duration-300 ease-in-out mt-4 inline-block"
             >Start Your Champion's Journey</a
           >
         </div>
@@ -421,7 +421,7 @@ import config from "@data/config.json";
           end: "top center",
           scrub: true,
         },
-      },
+      }
     )
     .fromTo(
       "#basketball",
@@ -434,7 +434,7 @@ import config from "@data/config.json";
           end: "bottom center",
           scrub: true,
         },
-      },
+      }
     )
     .fromTo(
       "#basketballPattern",
@@ -448,7 +448,7 @@ import config from "@data/config.json";
           scrub: true,
         },
       },
-      "0",
+      "0"
     );
 
   // @ts-ignore
