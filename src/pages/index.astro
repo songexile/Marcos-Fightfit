@@ -7,6 +7,13 @@ import hero1Img from "@assets/images/fighting.jpeg";
 import lifting from "@assets/images/benchpress.jpg";
 import heroVid from "@assets/videos/nav.mp4";
 
+import gallery1 from "@assets/images/gallery/gallery1.jpg";
+import gallery2 from "@assets/images/gallery/gallery2.jpg";
+import gallery3 from "@assets/images/gallery/gallery3.jpg";
+import gallery4 from "@assets/images/gallery/gallery4.jpg";
+
+const galleryImgs = [gallery1, gallery2, gallery3, gallery4];
+
 import config from "@data/config.json";
 ---
 
@@ -63,6 +70,7 @@ import config from "@data/config.json";
             Your browser does not support the video tag.
           </video>
         </div>
+        <h1 class="italic">Pad holding for all levels</h1>
       </div>
     </div>
     <div id="heroImgWrapper" class="absolute top-0 left-0 w-full h-full">
@@ -77,9 +85,9 @@ import config from "@data/config.json";
       />
     </div>
   </section>
-  <section class="bg-black py-24 px-4" id="classes">
+  <section class="bg-black py-16 max-md:py-8 px-4" id="classes">
     <div class="max-w-screen-xl mx-auto flex flex-col gap-20 max-md:gap-12">
-      <div class="flex items-center flex-col gap-10 text-center">
+      <div class="flex items-center flex-col gap-8 text-center">
         <div class="relative">
           <h1
             class="text-white font-extrabold text-7xl md:text-8xl p-6 bg-red-600 z-50 shadow-lg transform -skew-x-6"
@@ -131,51 +139,96 @@ import config from "@data/config.json";
           </div>
         </div>
       </div>
-      <div
-        class="text-center flex items-center flex-col mx-2 sm:mx-4 md:mx-8 lg:mx-16 py-12"
-      >
-        <h2 class="text-white text-4xl font-bold mb-6">My Mission</h2>
-        <div
-          class="flex flex-col text-left text-gray-300 text-xl leading-relaxed max-w-3xl mx-auto space-y-4"
-        >
-          <p class="font-semibold text-2xl text-primary">
-            Imagine being prepared for your first ring fight with all tools
-            needed? Or the body of your dreams for the date planned at the
-            beach?
-          </p>
-          <p>Here's how I will make it happen:</p>
-          <ul class="list-none space-y-3">
-            <li class="flex items-start">
-              <span class="text-primary mr-2">➤</span>
-              <span
-                ><strong class="text-white">Understanding Yourself:</strong> I will
-                develop/grow your understanding of your body and educate your mind
-                with technique so you will have the muscle memory and skill to perform
-                in any style of your choosing!</span
-              >
-            </li>
+    </div>
+  </section>
+  <section class="my-6 flex flex-col items-center gap-8" id="gallery">
+    <h1
+      class="text-white font-extrabold text-7xl md:text-8xl p-6 bg-red-600 z-50 shadow-lg transform -skew-x-6"
+    >
+      GALLERY
+    </h1>
 
-            <li class="flex items-start">
-              <span class="text-primary mr-2">➤</span>
-              <span
-                ><strong class="text-white">Muscle Development:</strong> Learn how
-                to forge the body of your goals and dreams as we take you through
-                each life step required to get there.</span
-              >
-            </li>
-          </ul>
-          <p class="text-2xl font-bold text-primary mt-4">
-            Your goals aren't impossible, so let me make reaching it easier!
-          </p>
-          <a
-            href="#contact"
-            class="bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-primary-dark transition duration-300 ease-in-out mt-4 inline-block"
-            >Start Your Champion's Journey</a
-          >
-        </div>
+    <div class="flex flex-col gap-2">
+      <div
+        class="carousel carousel-center w-full h-[640px] max-md:h-96 space-x-4"
+      >
+        {
+          galleryImgs.map((img, i) => (
+            <div class="carousel-item">
+              <Image
+                src={img}
+                alt="work image"
+                class="object-contain h-full w-full"
+              />
+            </div>
+          ))
+        }
+      </div>
+      <div
+        class="max-md:hidden flex gap-2 items-center w-full justify-center opacity-75"
+      >
+        <h1 class="italic">scroll using</h1>
+        <kbd class="kbd kbd-xs">Shift</kbd> +
+        <Icon name="mdi:mouse-scroll-wheel" />
+        <h1 class="italic">or</h1>
+        <Icon name="lucide:touchpad" />
+      </div>
+      <div
+        class="md:hidden flex gap-2 items-center w-full justify-center opacity-75"
+      >
+        <h1 class="italic">scroll right to see more</h1>
       </div>
     </div>
   </section>
+
+  <section
+    id="mission"
+    class="max-w-screen-xl text-center flex items-center flex-col mx-auto px-2 sm:mx-4 md:mx-8 lg:mx-16 py-12 max-md:py-8 gap-8"
+  >
+    <h1
+      class="text-white font-extrabold text-7xl md:text-8xl p-6 bg-red-600 z-50 shadow-lg transform -skew-x-6"
+    >
+      MY MISSION
+    </h1>
+    <div
+      class="flex flex-col text-left text-gray-300 text-xl leading-relaxed max-w-3xl mx-auto space-y-4"
+    >
+      <p class="font-semibold text-2xl text-primary">
+        Imagine being prepared for your first ring fight with all tools needed?
+        Or the body of your dreams for the date planned at the beach?
+      </p>
+      <p>Here's how I will make it happen:</p>
+      <ul class="list-none space-y-3">
+        <li class="flex items-start">
+          <span class="text-primary mr-2">➤</span>
+          <span
+            ><strong class="text-white">Understanding Yourself:</strong> I will develop/grow
+            your understanding of your body and educate your mind with technique
+            so you will have the muscle memory and skill to perform in any style
+            of your choosing!</span
+          >
+        </li>
+
+        <li class="flex items-start">
+          <span class="text-primary mr-2">➤</span>
+          <span
+            ><strong class="text-white">Muscle Development:</strong> Learn how to
+            forge the body of your goals and dreams as we take you through each life
+            step required to get there.</span
+          >
+        </li>
+      </ul>
+      <p class="text-2xl font-bold text-primary mt-4">
+        Your goals aren't impossible, so let me make reaching it easier!
+      </p>
+      <a
+        href="#contact"
+        class="bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-primary-dark transition duration-300 ease-in-out mt-4 inline-block"
+        >Start Your Champion's Journey</a
+      >
+    </div>
+  </section>
+
   <section
     id="contact"
     class="flex flex-col gap-16 py-16 max-w-screen-lg mx-auto px-2"
@@ -206,7 +259,7 @@ import config from "@data/config.json";
       name="contact"
       method="POST"
       data-netlify="true"
-      class="bg-red-700 p-8 rounded-2xl py-12 flex flex-col gap-2"
+      class="bg-red-700 p-8 rounded-2xl py-16 max-md:py-8 flex flex-col gap-2"
     >
       <label for="fname" class="text-white">First name</label>
       <input
