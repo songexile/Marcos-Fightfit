@@ -149,16 +149,14 @@ import config from "@data/config.json";
     </h1>
 
     <div class="flex flex-col gap-2">
-      <div
-        class="carousel carousel-center w-full h-[640px] max-md:h-96 space-x-4"
-      >
+      <div class="carousel h-[500px] max-md:h-96 max-md:max-w-2xl">
         {
-          galleryImgs.map((img, i) => (
+          galleryImgs.map((img, index) => (
             <div class="carousel-item">
               <Image
                 src={img}
-                alt="work image"
-                class="object-contain h-full w-full"
+                class="object-cover w-full"
+                alt={`carousel img ${index}`}
               />
             </div>
           ))
@@ -270,7 +268,7 @@ import config from "@data/config.json";
         required
         class="form-input px-4 py-3 w-full rounded bg-stone-100 text-black"
       />
-      
+
       <label for="lname" class="text-white">Last name</label>
       <input
         autocomplete="on"
