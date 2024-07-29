@@ -5,13 +5,13 @@ const { name, duration, schemes, attributes } = Astro.props;
 
 <div class="flex flex-col gap-4 rounded-2xl p-8 border-2 border-primary">
   <div class="flex flex-col gap-2">
-    <h1 class="text-xl font-bold">{name}</h1>
-    <h1 class="flex items-center text-base">
+    <h1 class="text-3xl font-bold">{name}</h1>
+    <h1 class="flex items-center text-base text-secondary">
       Duration: {duration}
     </h1>
   </div>
-  <div class="flex flex-col gap-8 my-auto">
-    <div class="flex flex-col gap-1">
+  <div class="flex flex-col gap-8 h-full">
+    <div class="flex flex-col gap-1 h-full justify-center">
       {
         schemes.map((scheme: any) => (
           <div>
@@ -28,14 +28,11 @@ const { name, duration, schemes, attributes } = Astro.props;
         ))
       }
     </div>
-    <ul class="flex flex-col gap-2">
+    <ul class="flex mt-auto flex-col gap-2">
       {
         attributes.map((attribute: string) => (
           <li class="flex items-center gap-2">
-            <Icon
-              name="mdi:check-circle"
-              class="text-primary text-lg flex-grow-0"
-            />
+            <Icon name="mdi:check-circle" class="text-primary flex-grow-0" />
             <span class="font-light">{attribute}</span>
           </li>
         ))
@@ -44,8 +41,7 @@ const { name, duration, schemes, attributes } = Astro.props;
   </div>
   <a
     href="/#contact"
-    target="_blank"
-    class="btn mt-auto text-white btn-primary font-extrabold btn-lg"
+    class="btn mt-4 text-white btn-primary font-extrabold btn-lg"
   >
     Book Now
   </a>
