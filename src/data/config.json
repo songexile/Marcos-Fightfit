@@ -56,6 +56,11 @@
       "url": "mailto:marcos_dietrich@hotmail.com"
     },
     {
+      "name": "instagram",
+      "icon": "mdi:instagram",
+      "url": "https://www.instagram.com/fight.fitt/"
+    },
+    {
       "name": "phone",
       "icon": "mdi:phone",
       "url": "tel:+64 021 090 03755"
