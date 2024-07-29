@@ -14,6 +14,54 @@ import gallery4 from "@assets/images/gallery/gallery4.jpg";
 
 const galleryImgs = [gallery1, gallery2, gallery3, gallery4];
 
+import PricingCard from "@components/PricingCard.astro";
+
+const plans = [
+  {
+    name: "Martial Arts PT",
+    duration: "1 hour",
+    attributes: [
+      "Form correction",
+      "New techniques",
+      "Drills",
+      "Unlock diverse body movements like head kicks",
+      "Understand how each part of your body functions",
+    ],
+    schemes: [
+      {
+        name: "Solo",
+        price: "60",
+      },
+      {
+        name: "Partnered",
+        price: "35",
+        isEach: true,
+      },
+      {
+        name: "Class of 4",
+        price: "25",
+        isEach: true,
+      },
+    ],
+  },
+  {
+    name: "Gym PT",
+    duration: "1.5 hours",
+    attributes: [
+      "A pathway to achieve your goal",
+      "Tailored program for conditioning, muscle building, weight loss",
+      "Show how exercises are done correctly",
+      "Programs tailored to increase your martial arts career",
+    ],
+    schemes: [
+      {
+        name: "Solo",
+        price: "80",
+      },
+    ],
+  },
+];
+
 import config from "@data/config.json";
 ---
 
@@ -224,6 +272,19 @@ import config from "@data/config.json";
         class="bg-primary hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-primary-dark transition duration-300 ease-in-out mt-4 inline-block"
         >Start Your Champion's Journey</a
       >
+    </div>
+  </section>
+
+  <section id="pricing" class="flex flex-col my-8 gap-16">
+    <h1
+      class="text-white font-extrabold text-7xl md:text-8xl p-6 bg-red-600 z-50 shadow-lg transform -skew-x-6 uppercase w-fit mx-auto"
+    >
+      Pricing
+    </h1>
+    <div
+      class="max-w-screen-lg mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-16 max-md:gap-8 px-4"
+    >
+      {plans.map((plan) => <PricingCard {...plan} />)}
     </div>
   </section>
 

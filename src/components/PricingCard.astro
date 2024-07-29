@@ -1,0 +1,52 @@
+---
+import { Icon } from "astro-icon/components";
+const { name, duration, schemes, attributes } = Astro.props;
+---
+
+<div class="flex flex-col gap-4 rounded-2xl p-8 border-2 border-primary">
+  <div class="flex flex-col gap-2">
+    <h1 class="text-xl font-bold">{name}</h1>
+    <h1 class="flex items-center text-base">
+      Duration: {duration}
+    </h1>
+  </div>
+  <div class="flex flex-col gap-8 my-auto">
+    <div class="flex flex-col gap-1">
+      {
+        schemes.map((scheme: any) => (
+          <div>
+            <div class="flex items-end gap-1">
+              <span class="font-bold text-4xl text-primary">
+                ${scheme.price}
+              </span>
+              {scheme.isEach && (
+                <span class="font-bold text-2xl text-primary">/each</span>
+              )}
+              <h1 class="text-lg">({scheme.name})</h1>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <ul class="flex flex-col gap-2">
+      {
+        attributes.map((attribute: string) => (
+          <li class="flex items-center gap-2">
+            <Icon
+              name="mdi:check-circle"
+              class="text-primary text-lg flex-grow-0"
+            />
+            <span class="font-light">{attribute}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <a
+    href="/#contact"
+    target="_blank"
+    class="btn mt-auto text-white btn-primary font-extrabold btn-lg"
+  >
+    Book Now
+  </a>
+</div>
