@@ -8,9 +8,7 @@ import amImg from "@assets/images/am.svg";
 import config from "@data/config.json";
 ---
 
-<footer
-  class="footer footer-center pt-8 px-4 pb-4 max-md:pb-24 gap-4 bg-black"
->
+<footer class="footer footer-center pt-8 px-4 pb-4 max-md:pb-24 gap-4 bg-black">
   <Image
     src={logo}
     alt="logo"
@@ -18,11 +16,11 @@ import config from "@data/config.json";
     width={500}
     height={500}
   />
-  <!-- <h1
+  <h1
     class="py-4 px-8 bg-primary text-xl font-bold rounded-2xl text-white uppercase"
   >
-    {config.businessName}
-  </h1> -->
+    PROUDLY BASED IN AUCKLAND, NEW ZEALAND
+  </h1>
   <ul class="menu menu-horizontal">
     {
       config.socials.map((social: any) => (
@@ -39,7 +37,6 @@ import config from "@data/config.json";
   >
     <p>© {config.businessName}. All right reserved</p>
     <div class="flex flex-col items-end gap-2 max-md:items-center">
-  
       <p class="flex items-center gap-1 max-md:self-center">
         Made possible by <a
           href="https://astromedia.dev"
